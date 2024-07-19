@@ -26,6 +26,16 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+
+    // 리소스 파일을 public으로 노출
+    publishNonDefault true
+
+    // 리소스 파일의 접근 범위를 public으로 설정
+    aaptOptions {
+        additionalParameters "--no-version-vectors"
+        noCompress 'tflite'
+    }
+
 }
 
 dependencies {
