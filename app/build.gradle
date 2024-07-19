@@ -1,14 +1,14 @@
 plugins {
-    id 'com.android.library'
+    id 'com.android.application'
 }
 
 android {
-    namespace 'DGB'
-    compileSdk 34
+    compileSdk 33
 
     defaultConfig {
+        applicationId "DGB"
         minSdk 23
-        targetSdk 34
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -26,9 +26,6 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-
-    // 리소스 파일을 public으로 노출
-    publishNonDefault true
 
     // 리소스 파일의 접근 범위를 public으로 설정
     aaptOptions {
