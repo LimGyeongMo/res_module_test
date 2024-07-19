@@ -1,13 +1,12 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
 }
 
 android {
-    namespace 'com.project.res_test'
+    namespace 'DGB'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.project.res_test"
         minSdk 23
         targetSdk 33
         versionCode 1
@@ -26,6 +25,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    resourcePrefix "library_"
 }
 
 dependencies {
@@ -36,3 +37,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.2.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
 }
+
+group='com.github.LimGyeongMo'
